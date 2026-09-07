@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unipar Games | Tudo sobre GTA VI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo Unipar Games" class="logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#comunidade">Comunidade</a>
+        </nav>
+    </header>
+
+    <div id="layout-geral">
+        <aside>
+            <h4>Últimas notícias</h4>
+            <ul>
+                <li>Trailer oficial bate recordes</li>
+                <li>Mapa confirmado no estado de Leonida</li>
+                <li>Fidelidade gráfica e novo motor de física</li>
+            </ul>
+        </aside>
+
+        <main id="container">
+            <section id="noticias">
+                <h2>Notícias</h2>
+                <article>
+                    <h3>Tudo o que você precisa saber sobre GTA VI</h3>
+
+                    <figure>
+                        <img width="700" height="400" alt="Artes conceituais dos protagonistas de GTA VI em Vice City" src="capa.png">
+                        <figcaption>Protagonistas Lucia e Jason no cenário iluminado de Vice City</figcaption>
+                    </figure>
+
+                    <div class="grid-conteudo">
+                        <section class="card">
+                            <h4>O Retorno a Vice City</h4>
+                            <p>GTA VI é o próximo título da Rockstar Games. O jogo ambienta o estado fictício de Leonida, com Vice City servindo de palco para o mundo aberto mais detalhado já criado.</p>
+                            <p>O foco em narrativa dinâmica traz interações aprimoradas com pedestres e sistemas climáticos avançados.</p>
+                        </section>
+
+                        <section class="card">
+                            <h4>Recursos e Multiplayer</h4>
+                            <p>Os jogadores terão total liberdade de exploração, personalização de veículos e novos padrões de inteligência artificial aplicados à cidade.</p>
+                            <p>Além da campanha em dupla, uma evolução completa do modo online cooperativo está sendo estruturada.</p>
+                        </section>
+                    </div>
+
+                    <div class="destaques-flex">
+                        <div class="caixa-destaque">
+                            <strong>Mapa Expandido</strong>
+                            <p>Exploração em pântanos, praias e centros urbanos densos.</p>
+                        </div>
+                        <div class="caixa-destaque">
+                            <strong>Inteligência Artificial</strong>
+                            <p>Comportamento de NPCs e tráfego com reações realistas.</p>
+                        </div>
+                    </div>
+
+                    <div class="video-container">
+                        <video controls poster="capa.png">
+                            <source src="video.mp4" type="video/mp4">
+                            Seu navegador não suporta a tag de vídeo.
+                        </video>
+                    </div>
+                </article>
+            </section>
+
+            <section id="comunidade">
+                <fieldset>
+                    <legend>Comentários da Comunidade</legend>
+                    <h3>Deixe sua opinião sobre as novidades do jogo</h3>
+
+                    <form action="#" method="post">
+                        <label for="nome">Informe seu Nome</label>
+                        <input type="text" id="nome" name="nome"
+                            title="Informe o seu nome completo"
+                            pattern="[A-Za-z ]+"
+                            placeholder="Nome" required>
+                        <br>
+
+                        <label for="email">Informe seu E-mail</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="E-mail" required>
+                        <br>
+
+                        <label for="plataforma">Selecione sua plataforma favorita</label>
+                        <br>
+                        <select name="plataforma" id="plataforma" required>
+                            <option value="" selected disabled>Selecione</option>
+                            <optgroup label="Consoles">
+                                <option value="PlayStation 5">PlayStation 5</option>
+                                <option value="Xbox Series X">Xbox Series X</option>
+                            </optgroup>
+                            <optgroup label="Computadores">
+                                <option value="PC">PC</option>
+                            </optgroup>
+                        </select>
+                        <br>
+
+                        <label for="mensagem">Deixe sua mensagem</label>
+                        <br>
+                        <textarea name="mensagem" id="mensagem"
+                            rows="6" cols="26" style="resize: none;"
+                            placeholder="Escreva seu comentário..." required></textarea>
+                        <br>
+
+                        <input type="submit" value="Publicar Comentário" class="btn">
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Copyright © 2000 - 2026 Unipar Games.</p>
+    </footer>
+
+</body>
+</html>
