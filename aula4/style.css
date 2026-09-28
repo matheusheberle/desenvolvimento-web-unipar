@@ -1,0 +1,115 @@
+/* 1. Reset básico para facilitar o cálculo dos tamanhos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Cores gerais da página */
+body {
+    background-color: rgb(225, 255, 255);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 3. Cabeçalho com Flexbox (título e menu alinhados) */
+header {
+    display: flex;
+    flex-direction: column;    /* Título em cima, menu em baixo */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 100, 200);
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 4. CSS Grid: o contentor pai que mete o artigo e a lateral lado a lado */
+.container-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* No telemóvel: 1 coluna única vertical */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 5. Estilo visual do cartão do Artigo */
+article {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* 6. Estilo visual da Barra Lateral (aside) */
+aside {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+aside a {
+    color: rgb(0, 100, 200);
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+
+    /* O cabeçalho passa a colocar o título à esquerda e o menu à direita */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* A estrutura principal passa a ter 2 colunas lado a lado */
+    .container-layout {
+        grid-template-columns: 3fr 1fr;
+        align-items: start;
+    }
+}
